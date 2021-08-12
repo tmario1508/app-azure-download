@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imagenfondo"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtcorreo"
+        android:layout_width="220dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.5"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="Correo"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenfondo"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintLeft_toRightOf="@+id/imagen"
+        app:layout_constraintRight_toRightOf="@+id/imagenfondo"
+        app:layout_constraintTop_toBottomOf="@+id/txtnombre"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="130dp"
+        android:layout_height="129dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imagenfondo"
+        app:layout_constraintTop_toTopOf="@+id/imagenfondo"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagenfondo"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/imagenfondo"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <TextView
+        android:id="@+id/txtnombre"
+        android:layout_width="218dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="Nombre"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/imagen"
+        app:layout_constraintRight_toRightOf="@+id/imagenfondo"
+        app:layout_constraintTop_toTopOf="@+id/imagenfondo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
